@@ -19,7 +19,7 @@ const recipes = [  {
   {
     id: 3,
     name: "Pan-Fried Sesame Garlic Tofu",
-    description: "Lemony, caper topped and buttery...",
+    description: "Make tofu exciting...",
     image: "https://www.tablefortwoblog.com/wp-content/uploads/2018/09/pan-fried-spicy-garlic-tofu-recipe-photos-tablefortwoblog-1.jpg.webp",
     tags: ["tofu", "vegetarian", "sesame", "garlic"],
     url: "https://www.tablefortwoblog.com/pan-fried-sesame-garlic-tofu/"
