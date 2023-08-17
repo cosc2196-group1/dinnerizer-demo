@@ -10,11 +10,16 @@ export default function GroceryPage() {
     const [inputValue, setInputValue] = useState('');
 
     const handleAddItem = () => {
-        if (inputValue.trim()) {
-            setItems(prevItems => [...prevItems, inputValue.trim()]);
-            setInputValue('');
-        }
-    }
+      if (inputValue.trim()) {
+          const newItem = {
+              id: Date.now(),
+              name: inputValue.trim(),
+              quantity: 1
+          };
+          setItems(prevItems => [...prevItems, newItem]);
+          setInputValue('');
+      }
+  }
 
     const removeItem = (itemId) => {
         setItems(prevItems => prevItems.filter(item => item.id !== itemId));
